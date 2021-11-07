@@ -7,11 +7,12 @@ import { MovieShowComponent } from './movie-show/movie-show.component';
 import { MovieRoutingModule } from './movie-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MovieCardComponent } from '../../core/components/movie-card/movie-card.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputSelectComponent } from '../../core/components/input-select/input-select.component';
 import { MovieComponent } from './movie/movie.component';
 import { ConfirmModalComponent } from 'src/app/core/components/confirm-modal/confirm-modal.component';
 import { CoreModule } from 'src/app/core/core.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,8 +29,10 @@ import { CoreModule } from 'src/app/core/core.module';
     MovieRoutingModule,
     FlexLayoutModule,
     MaterialModule,
+    FormsModule,
     ReactiveFormsModule,
-    CoreModule
+    CoreModule,
+    HttpClientModule
   ]
 })
 export class MovieModule { }
