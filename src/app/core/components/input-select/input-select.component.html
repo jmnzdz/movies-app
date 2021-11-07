@@ -1,0 +1,16 @@
+<div fxLayout="row" fxLayoutGap="40px" fxLayout.xs="column">
+    <div fxFlex="100" fxLayout="column">
+        <mat-form-field appearance="fill">
+            <mat-label>{{label}}</mat-label>
+            <mat-chip-list #chipList>
+                <mat-chip *ngFor="let item of items" removable=true (removed)="remove(item)">
+                    {{item | genre}}
+                    <button matChipRemove>
+                        <mat-icon>cancel</mat-icon>
+                    </button>
+                </mat-chip>
+                <input [placeholder]="placeholder" [matChipInputFor]="chipList" (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+        </mat-form-field>
+    </div>
+</div>
