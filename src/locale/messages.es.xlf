@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-GB" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="confirm.text" datatype="html">
+        <source>Confirm</source>
+        <target>Confirmar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/components/confirm-modal/confirm-modal.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Confirm text</note>
+      </trans-unit>
+      <trans-unit id="cancel.text" datatype="html">
+        <source>Cancel</source>
+        <target>Cancelar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/components/confirm-modal/confirm-modal.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Cancel text</note>
+      </trans-unit>
+      <trans-unit id="movies.text" datatype="html">
+        <source>Movies</source>
+        <target>Películas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/home.service.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-list/movie-list.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Movies text</note>
+      </trans-unit>
+      <trans-unit id="menu.text" datatype="html">
+        <source>Menu</source>
+        <target>Menú</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Menu textd</note>
+      </trans-unit>
+      <trans-unit id="movie.title" datatype="html">
+        <source>Title</source>
+        <target>Título</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Movie title field</note>
+      </trans-unit>
+      <trans-unit id="movie.poster" datatype="html">
+        <source>Poster (url)</source>
+        <target>Póster (url)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Movie poster field</note>
+      </trans-unit>
+      <trans-unit id="movie.actors" datatype="html">
+        <source>Actors</source>
+        <target>Actores</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-show/movie-show.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">Movie actors field</note>
+      </trans-unit>
+      <trans-unit id="movie.company" datatype="html">
+        <source>Company</source>
+        <target>Estudio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-show/movie-show.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Movie company field</note>
+      </trans-unit>
+      <trans-unit id="movie.year" datatype="html">
+        <source>Year</source>
+        <target>Año</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Movie year field</note>
+      </trans-unit>
+      <trans-unit id="movie.duration" datatype="html">
+        <source>Duration</source>
+        <target>Duración</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-show/movie-show.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Movie duration field</note>
+      </trans-unit>
+      <trans-unit id="movie.rating" datatype="html">
+        <source>Rating</source>
+        <target>Puntuación</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <note priority="1" from="description">Movie rating field</note>
+      </trans-unit>
+      <trans-unit id="back.text" datatype="html">
+        <source>Back</source>
+        <target>Atrás</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Back text</note>
+      </trans-unit>
+      <trans-unit id="create.text" datatype="html">
+        <source>Create</source>
+        <target>Crear</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Create button text</note>
+      </trans-unit>
+      <trans-unit id="new.movie.text" datatype="html">
+        <source>New movie</source>
+        <target>Nueva película</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">New movie text</note>
+      </trans-unit>
+      <trans-unit id="create.edit" datatype="html">
+        <source>Edit</source>
+        <target>Editar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">Edit button text</note>
+      </trans-unit>
+      <trans-unit id="edit.movie.text" datatype="html">
+        <source>Edit movie</source>
+        <target>Editar película</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">Edit movie text</note>
+      </trans-unit>
+      <trans-unit id="movie.create.success" datatype="html">
+        <source>Movie was created successfully</source>
+        <target>La película fué creada correctamente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <note priority="1" from="description">Success message when movie is created</note>
+      </trans-unit>
+      <trans-unit id="movie.create.error" datatype="html">
+        <source>Movie coud not be created</source>
+        <target>La película no pudo ser creada</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <note priority="1" from="description">Error message when movie is created</note>
+      </trans-unit>
+      <trans-unit id="movie.edit.success" datatype="html">
+        <source>Movie was edited successfully</source>
+        <target>La película fué editada correctamente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <note priority="1" from="description">Success message when movie is edited</note>
+      </trans-unit>
+      <trans-unit id="movie.edit.error" datatype="html">
+        <source>Movie coud not be edited</source>
+        <target>La película no pudo ser editada</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-form/movie-form.component.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <note priority="1" from="description">Error message when movie is edited</note>
+      </trans-unit>
+      <trans-unit id="movie.imdb.rating" datatype="html">
+        <source>Rating</source>
+        <target>Puntuación</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-show/movie-show.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Movie IMBD rating field</note>
+      </trans-unit>
+      <trans-unit id="movie.genre" datatype="html">
+        <source>Genre</source>
+        <target>Género</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-show/movie-show.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Movie genre field</note>
+      </trans-unit>
+      <trans-unit id="movie.delete.warning" datatype="html">
+        <source>Do you want to remove the movie?</source>
+        <target>¿Deseas eliminar la película?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-show/movie-show.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">Warning message when movie is deleted</note>
+      </trans-unit>
+      <trans-unit id="movie.delete.success" datatype="html">
+        <source>Movie was deleted successfully</source>
+        <target>La película fué eliminada correctamente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-show/movie-show.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">Success message when movie is deleted</note>
+      </trans-unit>
+      <trans-unit id="movie.delete.error" datatype="html">
+        <source>Movie could not be deleted</source>
+        <target>La película no pudo ser eliminada</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/movie/movie-show/movie-show.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">Error message when movie is deleted</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
