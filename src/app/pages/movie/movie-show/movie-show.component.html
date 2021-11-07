@@ -1,0 +1,63 @@
+<div fxLayout="row" fxLayoutAlign="center" class="spinner" *ngIf="!movie; else show">
+    <mat-spinner></mat-spinner>
+</div>
+
+<ng-template #show>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
+
+        <div fxFlex="40">
+            <img [src]="movie.poster | image" alt={{movie.title}}>
+        </div>
+
+        <div fxFlex="60">
+            <div fxLayout="row">
+                <div fxFlex="50">
+                    <h2 i18n="Movie IMBD rating field@@movie.imdb.rating">Rating</h2>
+                    <h3>{{movie.imdbRating}}</h3>
+                </div>
+                <div fxFlex="50">
+                    <h2 i18n="Movie duration field@@movie.duration">Duration</h2>
+                    <h3>{{movie.duration | duration}}</h3>
+                </div>
+            </div>
+
+            <h1 i18n="Movie actors field@@movie.actors">Actors</h1>
+            <mat-divider></mat-divider>
+            <mat-list>
+                <mat-list-item *ngFor="let actor of actors"> {{ actor | fullname }} </mat-list-item>
+            </mat-list>
+            <br>
+
+            <h1 i18n="Movie company field@@movie.company">Company</h1>
+            <mat-divider></mat-divider>
+            <mat-list>
+                <mat-list-item> {{ company?.name }} </mat-list-item>
+            </mat-list>
+            <br>
+
+            <h1 i18n="Movie genre field@@movie.genre">Genre</h1>
+            <mat-divider></mat-divider>
+            <mat-list>
+                <mat-list-item>
+                    <ng-container *ngFor="let genre of movie.genre">
+                        {{ genre | genre }}
+                    </ng-container>
+                </mat-list-item>
+            </mat-list>
+            <br>
+        </div>
+
+    </div>
+
+    <div class="float">
+        <button mat-fab color="primary" [routerLink]="['/movies/edit', movie.id]">
+            <mat-icon>edit</mat-icon>
+        </button>
+        &nbsp;
+        <button mat-fab color="warn" (click)="confirmDelete()">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </div>
+
+</ng-template>
