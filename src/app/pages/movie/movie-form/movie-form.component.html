@@ -1,0 +1,69 @@
+<div fxLayout="row" fxLayoutAlign="center" class="spinner" *ngIf="!form; else show">
+    <mat-spinner></mat-spinner>
+</div>
+
+<ng-template #show>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div fxLayout="row" fxLayoutGap="40px" fxLayout.xs="column">
+            <div fxFlex="50" fxLayout="column">
+                <mat-form-field appearance="fill">
+                    <mat-label i18n="Movie title field@@movie.title">Title</mat-label>
+                    <input matInput formControlName="title">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label i18n="Movie poster field@@movie.poster">Poster (url)</mat-label>
+                    <input type="url" matInput formControlName="poster">
+                </mat-form-field>
+
+                <input-select formControlName="genre" [items]="movie?.genre! || []" label="Genre"
+                    label-i18n="Movie genre field@@movie.genre" placeholder="Add a genre..."
+                    placeholder-i18n="Movie genre field@@movie.genre"></input-select>
+
+                <mat-form-field appearance="fill">
+                    <mat-label i18n="Movie actors field@@movie.actors">Actors</mat-label>
+                    <mat-select formControlName="actors" multiple>
+                        <mat-option *ngFor="let actor of actors" [value]="actor.id">
+                            {{actor | fullname}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label i18n="Movie company field@@movie.company">Company</mat-label>
+                    <mat-select formControlName="company">
+                        <mat-option *ngFor="let company of companies" [value]="company.id">
+                            {{company.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label i18n="Movie year field@@movie.year">Year</mat-label>
+                    <input matInput formControlName="year">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label i18n="Movie duration field@@movie.duration">Duration</mat-label>
+                    <input matInput formControlName="duration">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label i18n="Movie rating field@@movie.rating">Rating</mat-label>
+                    <input matInput formControlName="imdbRating">
+                </mat-form-field>
+
+            </div>
+        </div>
+
+        <button mat-raised-button color="primary" type="submit">
+            <mat-icon>edit</mat-icon>
+            {{ button }}
+        </button>
+        &nbsp;
+        <button mat-raised-button (click)="goBack()">
+            <mat-icon>arrow_back</mat-icon>
+            {{ back }}
+        </button>
+    </form>
+</ng-template>
