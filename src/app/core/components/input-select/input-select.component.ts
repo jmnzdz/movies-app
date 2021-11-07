@@ -44,7 +44,6 @@ export class InputSelectComponent implements OnInit, ControlValueAccessor {
   }
 
   writeValue(value: string[]): void {
-    console.log(value);
     this.value = value;
   }
 

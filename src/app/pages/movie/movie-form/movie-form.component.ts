@@ -54,7 +54,6 @@ export class MovieFormComponent implements OnInit {
     this.homeService.title$.next($localize`:Edit movie text@@edit.movie.text:Edit movie`);
     combineLatest([this.movieService.getMovie(id), this.actorService.getActors(), this.companyService.getCompanies()])
       .subscribe(([movie, actors, companies]) => {
-        console.log(movie);
         this.movie = movie;
         this.actors = actors;
         this.companies = companies;
@@ -77,7 +76,6 @@ export class MovieFormComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.form.value);
     if (this.form.valid) {
       if (this.movie) {
         this.editMovie();
