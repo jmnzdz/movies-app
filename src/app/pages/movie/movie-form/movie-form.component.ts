@@ -104,6 +104,7 @@ export class MovieFormComponent implements OnInit {
   }
 
   goBack() {
-    this.router.navigateByUrl('/movies/' + this.movie.id);
+    this.movie ? this.router.navigateByUrl('/movies/' + this.movie.id)
+      : this.router.navigateByUrl('/');
   }
 }
