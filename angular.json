@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "moviesApp": {
+    "movies-app": {
       "i18n": {
         "sourceLocale": "en-GB",
         "locales": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/moviesApp",
+            "outputPath": "dist/movies-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,7 +68,7 @@
               "sourceMap": true,
               "namedChunks": true
             },
-            "dev-es": {
+            "es": {
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -86,13 +86,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "moviesApp:build:production"
+              "browserTarget": "movies-app:build:production"
             },
             "development": {
-              "browserTarget": "moviesApp:build:development"
+              "browserTarget": "movies-app:build:development"
             },
             "es": {
-              "browserTarget": "moviesApp:build:dev-es",
+              "browserTarget": "movies-app:build:es",
               "baseHref": "/es/"
             }
           },
@@ -101,7 +101,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "moviesApp:build"
+            "browserTarget": "movies-app:build"
           }
         },
         "test": {
@@ -125,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "moviesApp"
+  "defaultProject": "movies-app"
 }
